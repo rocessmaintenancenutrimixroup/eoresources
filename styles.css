@@ -1388,7 +1388,7 @@ body {
 @media (prefers-color-scheme: dark) {
     .popup-container {
         background: #1e1e1e;
-        border-color: #0078d7;
+        border-color: #141414;
     }
     
     .form-message {
